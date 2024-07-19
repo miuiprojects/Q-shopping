@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product View - E-commerce</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        main {
+            flex: 1;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .product-view {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 1rem;
+        }
+
+        .product-images img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 1rem;
+        }
+
+        .product-description, .product-price, .product-ratings {
+            margin-bottom: 1rem;
+        }
+
+        .related-products {
+            margin-top: 2rem;
+        }
+
+        .related-products-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .product-item {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 1rem;
+            margin: 1rem;
+            width: 200px;
+            text-align: center;
+        }
+
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 1rem;
+        }
+
+        button {
+            background: #333;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #555;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Q Shopping</h1>
+    </header>
+    
+    <main>
+        <section class="product-view">
+            <h2>XIAOMI NR</h2>
+            <div class="product-images">
+                <img src="../images/pro/mobiles/mobile-1.jpg" alt="Product 1">
+            </div>
+            <div class="product-description">
+                <p><b>HyperOS 1</b>, exponentially upgraded <br>
+                    Leica Summilux optical lens has a large aperture making photos lighter, brighter<br>
+                    Customized Light Fusion 900 image sensor for a 13.5EV high dynamic range.<br>
+                    <b>Snapdragon® 8 Gen 3 Mobile Platform</b> comes with leading power efficiency.</p>
+            </div>
+            <div class="product-price">
+                <p>Price: Rs.55,890</p>
+                <div class="product-ratings">
+                    <p>Ratings: ★★★☆</p>
+                </div>
+            </div>
+            
+            <button>Add to Cart</button>
+            
+            <div class="related-products">
+                <h3>Related Products</h3>
+                <div class="related-products-list">
+                    <div class="product-item">
+                        <img src="../images/pro/mobiles/mobile-2.jpg" alt="Product 2">
+                        <h3>REDMI NOTE 14</h3>
+                        <p>Rs.15,000</p>
+                        <button>Buy Now</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../images/pro/mobiles/mobile-3.jpg" alt="Product 3">
+                        <h3>REDMI 11</h3>
+                        <p>Rs.14,000</p>
+                        <button onclick="alert('Add Sucess')">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Q Shopping.<br><code><b> All rights reserved.</b></code></p>
+        </div>
+    </footer>
+</body>
+</html>
